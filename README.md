@@ -26,4 +26,4 @@ npm run dev
 la ruta del localhost figura en local.
 
 Listo. Happy Coding!
-hola
+hola chau
