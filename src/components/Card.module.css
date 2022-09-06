@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--colorBorderCard);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--backCard);
+    box-shadow: var(--shadowInput) 5px 5px 0px 0px;
+}
