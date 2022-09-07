@@ -6,7 +6,6 @@ import Users from './components/Users'
 import Personajes from './components/Personajes'
 import Error from './components/Error'
 
-
 // RUTEO
 
 function App() {

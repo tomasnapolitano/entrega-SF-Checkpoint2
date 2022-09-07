@@ -20,9 +20,9 @@ function personajes() {
   console.log(personajes);
   
   return (
-    <div className={styles.usersContainer}>
-      <h1>RICK & MORTY</h1>
-      <div>
+    <div className={styles.container}>
+    <h1>RICK & MORTY</h1>
+      <div className={styles.cardBox}>
         {personajes.map((personaje) => {
           return <Card data={personaje} key={personaje.id}/>
         })}

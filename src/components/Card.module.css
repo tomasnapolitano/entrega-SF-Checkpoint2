@@ -1,8 +1,18 @@
+:root {
+    /*-------TABLERO DE COLORES--------*/ 
+    --colorText: #ebd983;
+    --backCard: #ebd983;
+    --colorBorderCard: #131518;
+    --shadowInput: #99a32b;
+    --shadowCardHover: #c7a02c;
+}
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 18rem;
+    height: auto;
     border: 1px solid var(--colorBorderCard);
     border-radius: 5px;
     overflow: hidden;
