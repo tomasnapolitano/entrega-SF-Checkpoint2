@@ -25,34 +25,35 @@ function Users() {
     <Link className={styles.btn} to='/'>Back</Link>
     <div className={styles.container}>
         <div className={styles.row}>
-            <div className="col-md-12">
-                <div className="table-responsive">
-                    <table className="table table-dark">
+            <div>
+                <div>
+                    <table>
                         <thead>
-                            <tr>
-                                <th>id</th>
-                                <th>Name</th>
-                                <th>Username</th>
-                                <th>Email</th>
-                                <th>Company Name</th>
-                                <th>Telephone</th>
-                                <th>City</th>
+                            <tr className={styles.tr}>
+                                <th className={styles.th}>id</th>
+                                <th className={styles.th}>Name</th>
+                                <th className={styles.th}>Username</th>
+                                <th className={styles.th}>Email</th>
+                                <th className={styles.th}>Company Name</th>
+                                <th className={styles.th}>Telephone</th>
+                                <th className={styles.th}>City</th>
                             </tr>
                         </thead>
-                        <tbody id="tableBody_users"></tbody>
+                        <tbody className={styles.tbody}>
                         {users.map((user) => {
                           return(
-                          <tr>
-                          <td>{user.id}</td>
-                          <td>{user.name}</td>
-                          <td>{user.username}</td>
-                          <td>{user.email}</td>
-                          <td>{user.company.name}</td>
-                          <td>{user.phone}</td>
-                          <td>{user.address.city}</td>
+                          <tr className={styles.tr}>
+                          <td className={styles.td}>{user.id}</td>
+                          <td className={styles.td}>{user.name}</td>
+                          <td className={styles.td}>{user.username}</td>
+                          <td className={styles.td}>{user.email}</td>
+                          <td className={styles.td}>{user.company.name}</td>
+                          <td className={styles.td}>{user.phone}</td>
+                          <td className={styles.td}>{user.address.city}</td>
                           </tr>
                           )
                         })}
+                        </tbody>
                     </table>
                 </div>
             </div>
