@@ -3,9 +3,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #73C8A9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #373B44, #73C8A9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #373B44, #73C8A9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 .container {
 
@@ -37,20 +37,20 @@
 
   
   .td, .th {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     border: 1px solid #ddd;
     padding: 8px;
   }
   
-  .tr{background-color: #72BEBA;}
-  .tr:nth-child(even){background-color: #DDB952;}
+  .tr{background-color: #118a7e;}
+  .tr:nth-child(even){background-color: #3baea0;}
   
-  .tr:hover {background-color: #D7D7D7;}
+  .tr:hover {background-color: #93e4c1;}
   
   .th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #D85827;
+    background-color: #1f6f78;
     color: white;
   }
