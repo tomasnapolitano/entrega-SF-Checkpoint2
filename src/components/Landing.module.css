@@ -65,7 +65,7 @@ b {
       0 1px 3px rgba(0,0,0,.2);
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
     background-image: linear-gradient(rgb(255, 72, 0) 10%,#e76a00 100%);
-    animation: rotate-center 0.6s ease-in-out both;
+    animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
   
 .btn:hover, .btn:focus {
@@ -170,17 +170,21 @@ ul {
     }
 }
 
+
 /**
  * ----------------------------------------
- * animation rotate-center
+ * animation fade-in-fwd
  * ----------------------------------------
  */
- @keyframes rotate-center {
+ @keyframes fade-in-fwd {
     0% {
-      transform: rotate(0);
+      transform: translateZ(-80px);
+      opacity: 0;
     }
     100% {
-      transform: rotate(360deg);
+      transform: translateZ(0);
+      opacity: 1;
     }
   }
+  
   
