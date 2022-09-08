@@ -11,9 +11,9 @@ function Paginado({total, actual, data, setPagina, setActual}) {
     setActual(( actual != 1 ) ? actual-1 : actual)
   }
 
-  console.log(setPagina)
-  console.log(setActual);
-  console.log(actual);
+  //console.log(setPagina)
+  //console.log(setActual);
+  //console.log(actual);
   
   return (
     <div className={styles.container}>
