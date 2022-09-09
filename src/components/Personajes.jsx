@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Buscador from './Buscador'
 import Card from './Card'
 import GetApi from './GetApi'
+import HeaderRyM from './HeaderRyM'
+
 import Paginado from './Paginado'
 import styles from './Personajes.module.css'
+
 
 const urlAPI = 'https://rickandmortyapi.com/api/character'
 const urlBusqueda = `https://rickandmortyapi.com/api/character/?name=`
@@ -16,6 +19,7 @@ function personajes() {
   const [numPag, setNumPag] = useState(1)
   const [busqueda, setBusqueda] = useState('')
   const [pass, setPass] = useState(true)
+  
 
   const getPersonajes = async (busqueda) => {
     console.log('getPersonajes ejecutado');
@@ -41,7 +45,7 @@ function personajes() {
 
   return (
     <div className={styles.container}>
-      <h1>RICK & MORTY</h1>
+      <HeaderRyM />
       <Buscador setBusqueda={setBusqueda} setPass={setPass} setActual={setNumPag}/>
       <Paginado total={totalPaginas} actual={numPag} setActual={setNumPag} setPagina={setPagina} data={response}/>
       <div className={styles.cardBox}>

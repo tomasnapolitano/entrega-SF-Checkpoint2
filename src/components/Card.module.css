@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 :root {
     /*-------TABLERO DE COLORES--------*/ 
     --colorText: #ebd983;
     --backCard: #ebd983;
     --colorBorderCard: #131518;
-    --shadowInput: #99a32b;
+    --shadowInput: #000000;
     --shadowCardHover: #c7a02c;
 }
 .card {
@@ -11,11 +12,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 18rem;
-    height: auto;
+    width: 300px;
+    height: 355px;
     border: 1px solid var(--colorBorderCard);
     border-radius: 5px;
     overflow: hidden;
     background-color: var(--backCard);
-    box-shadow: var(--shadowInput) 5px 5px 0px 0px;
+    box-shadow: var(--shadowInput) 3px 3px 10px 0px;
+    cursor: pointer;
+}
+.title {
+    margin: 15px 5px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(20, 20, 20);
 }

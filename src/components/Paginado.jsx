@@ -1,4 +1,5 @@
 import styles from './Paginado.module.css'
+import Button from '@mui/material/Button';
 
 function Paginado({total, actual, data, setPagina, setActual}) {
  
@@ -17,9 +18,9 @@ function Paginado({total, actual, data, setPagina, setActual}) {
   
   return (
     <div className={styles.container}>
-      <button onClick={cambiarPaginaDown}>previo</button>
-      <h3>{actual}</h3> - <h3>{total}</h3>
-      <button onClick={cambiarPaginaUp}>siguiente</button>
+      <Button variant="outlined" color="warning" onClick={cambiarPaginaDown}>Prev</Button>
+      <h3 className={styles.data}>{actual} - {total}</h3>
+      <Button variant="outlined" color="warning" onClick={cambiarPaginaUp}>Next</Button>
     </div>
   )
 }
