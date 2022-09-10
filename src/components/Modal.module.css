@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 .container {
-    background-color:rgb(36, 35, 35, 0.5);
+    background-color:rgb(36, 35, 35, 0.7);
     position: fixed;
     top: 0;
     left: 0;
@@ -8,10 +8,42 @@
     height: 100%;
     border: 1px solid black;
 }
+.cardDetail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 40px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #b2a460;
+    padding: 5px;
+    width: 600px;
+    /* otra forma de centrar un componente*/
+    left: 50%;
+    transform: translateX(-50%);
+}
 .image {
     width: 300px;
-    height: 355px;
+    height: 300px;
+    border-radius: 3px;
+    border: 1px solid black;
 }
 .text {
     font-family: 'Roboto Condensed', sans-serif;
+    line-height: 40px;
+    color: rgb(20, 20, 20);
+}
+
+@media (max-width: 635px) {
+    .cardDetail {
+        flex-direction: column;
+        width: 300px;
+        margin: 3%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 30%;
+        gap: 10px; 
+    }
 }
