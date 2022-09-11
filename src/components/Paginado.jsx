@@ -4,12 +4,12 @@ import Button from '@mui/material/Button';
 function Paginado({total, actual, data, setPagina, setActual}) {
  
   const cambiarPaginaUp = () => {
-    setPagina(data.info.next)
-    setActual(( actual < total ) ? actual+1 : actual)
+      setPagina(data.info.next)
+      setActual(( actual < total ) ? actual+1 : actual)
   }
   const cambiarPaginaDown = () => {
-    setPagina(data.info.prev)
-    setActual(( actual != 1 ) ? actual-1 : actual)
+      setPagina(data.info.prev)
+      setActual(( actual != 1 ) ? actual-1 : actual)
   }
 
   //console.log(setPagina)

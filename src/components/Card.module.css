@@ -2,7 +2,7 @@
 :root {
     /*-------TABLERO DE COLORES--------*/ 
     --colorText: #ebd983;
-    --backCard: #ebd983;
+    --backCard: #b2a460;
     --colorBorderCard: #131518;
     --shadowInput: #000000;
     --shadowCardHover: #c7a02c;
@@ -26,4 +26,7 @@
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(20, 20, 20);
+}
+.image {
+    border-bottom: 1px solid rgb(49, 48, 48);
 }
