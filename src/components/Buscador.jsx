@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react'
 import styles from './Buscador.module.css'
-import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 function Buscador({setBusqueda, setPass, setActual}) {
@@ -19,8 +18,8 @@ function Buscador({setBusqueda, setPass, setActual}) {
   console.log(texto);
   return (
     <form className={styles.container} onSubmit={buscar}>
-        <TextField  className={styles.textField} margin="dense" color="warning"  id="outlined-basic" label="Buscar Personaje" variant="outlined" value={texto} onChange={setTextoBusqueda} />
-        <Button className={styles.button} variant="outlined" color="warning" type='submit'>Buscar</Button>
+        <input className={styles.input} type='text' placeholder='Buscar Personaje' value={texto} onChange={setTextoBusqueda}></input>
+        <Button className={styles.button} variant="contained" color="warning" type='submit'>Buscar</Button>
     </form>
   )
 }

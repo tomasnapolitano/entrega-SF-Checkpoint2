@@ -18,9 +18,9 @@ function Paginado({total, actual, data, setPagina, setActual}) {
   
   return (
     <div className={styles.container}>
-      <Button variant="outlined" color="warning" onClick={cambiarPaginaDown}>Prev</Button>
+      <Button variant="contained" color="warning" onClick={cambiarPaginaDown}>Prev</Button>
       <h3 className={styles.data}>{actual} - {total}</h3>
-      <Button variant="outlined" color="warning" onClick={cambiarPaginaUp}>Next</Button>
+      <Button variant="contained" color="warning" onClick={cambiarPaginaUp}>Next</Button>
     </div>
   )
 }

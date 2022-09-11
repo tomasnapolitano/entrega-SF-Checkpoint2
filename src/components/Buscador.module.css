@@ -14,9 +14,22 @@
     border-radius: 5px;
 
 }
+.input {
+    background: rgb(174,213,238);
+    background: radial-gradient(circle, rgba(174,213,238,0.8) 0%, rgba(218,233,148,0.7) 100%);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    width: 480px;
+    height: 30px;
+    font-size: larger;
+
+
+}
 
 @media (max-width: 550px) {
-    .textField {
-        width: 350px; 
+    .input {
+        width: 300px; 
     }
 }

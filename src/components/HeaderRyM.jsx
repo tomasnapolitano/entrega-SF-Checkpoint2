@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './HeaderRyM.module.css'
-import Logo from '../assets/Rick-and-Morty.png'
+import Logo from '../assets/Rick-and-Morty1.png'
 
 function HeaderRyM() {
   return (
