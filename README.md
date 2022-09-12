@@ -24,6 +24,8 @@ y renderiza el resultado en el DOM, en formato de tabla.
 https://rickandmortyapi.com/api/character
 y muestra los resultados en forma de tarjeta. Incluye detalle,
 buscador y paginación.
+
+### Deploy en Vercel: https://react-skill-factory-vite-app.vercel.app/
 ------------------------------------------------------------
 ## Recomendaciones para correr Vite:
 
@@ -58,4 +60,3 @@ la ruta del localhost figura en "local".
 Listo!.
 
 ##### ✨Happy Coding!✨
-
