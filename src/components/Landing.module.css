@@ -19,12 +19,16 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    background-color: #0000005e;
+    padding-bottom: 20px;
 }
 .skillLogo {
     display: flex;
     margin: 40px 0px 0 40px;
     width: auto;
     height: 125px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 .react {
     margin: 0 80px;
@@ -35,10 +39,13 @@ body {
     color: #f2f2f2;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
+    text-shadow:5px 5px 5px #222;
 }
 .logoReact {
     width: 80px;
     height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 /*-----------------------------------------Main----------------------------------------*/
 main {
@@ -60,7 +67,7 @@ b {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     font-size: 1.5rem;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    text-shadow: 0 1.5px 0 rgba(0,0,0,.5);
     box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
       0 1px 3px rgba(0,0,0,.2);
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
@@ -101,8 +108,9 @@ ul {
 /*--------------------------------------Footer-----------------------------------------*/
 .footer {
     display: flex;
-    margin: 0 20px 60px 0;
+    margin: 0 0px 60px 0;
     justify-content: space-evenly;
+    background-color: #00000065;
 }
 .linkedIn, .gitHub {
     margin: 15px;
