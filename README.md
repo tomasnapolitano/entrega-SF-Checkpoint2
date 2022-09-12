@@ -1,7 +1,29 @@
 ------------------------------------------------------------
 # Segundo Checkpoint - SkillFactory React 2022 - Avalith.
 ------------------------------------------------------------
-
+## Objetivos:
+### Migrar una página desarrollada en Js Vanilla a React.
+##### Aplicar lo aprendido en Bootcamp:
+- Interactuar con formularios y manejo de información.
+- Realizar peticiones a APIs externas.
+- Trabajar con asincronismos y promesas.
+- Manejo de componentes con React.
+- Ruteo usando _react-router-dom 6.3.0_
+- Uso de Hooks.
+- Maquetado de página web.
+- Uso de librerias externas como _Material UI_
+------------------------------------------------------------
+## Contenido:
+Una SPA (single page application) compuesta por tres rutas:
+- Formulario: Toma la información cargada y la devuelve por
+consola en formato Json (console.log)
+- Usuarios: Realiza una petición a la API
+https://jsonplaceholder.typicode.com/users
+y renderiza el resultado en el DOM, en formato de tabla.
+- Personajes: realiza una petición a la API
+https://rickandmortyapi.com/api/character
+y muestra los resultados en forma de tarjeta. Incluye detalle,
+buscador y paginación.
 ------------------------------------------------------------
 ## Recomendaciones para correr Vite:
 
@@ -12,18 +34,28 @@
   
 ------------------------------------------------------------
 
-//-----Pasos para Ejecutar el proyecto con Vite-----//
+## //-----Pasos para Ejecutar el proyecto con Vite-----//
 
-Clonado el repo. Ingresar a la carpeta del proyecto y en 
-consola ejecutar:
+Abrir una terminal en la carpeta de destino y clonar el repositorio,
+mediante los comandos:
 
-npm install
+- git init
+- git clone https://github.com/Ferclemens/React-SkillFactory-ViteApp.git
 
-Una vez instaladas las dependencias, inicializamos con:
+Ingresar a la carpeta del proyecto:
 
-npm run dev
+- cd React-SkillFactory-ViteApp
 
-la ruta del localhost figura en local.
+Instalar las dependencias:
 
-Listo. Happy Coding!
+- npm install
+
+Una vez terminada la instalación, inicializamos con:
+
+- npm run dev
+
+la ruta del localhost figura en "local".
+Listo!.
+
+##### ✨Happy Coding!✨
 
