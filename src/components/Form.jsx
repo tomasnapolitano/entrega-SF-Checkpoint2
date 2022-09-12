@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Form.module.css'
 import { Link } from 'react-router-dom'
+import buttonBack from '../assets/Back.png'
 
 
 function Form() {
@@ -32,7 +33,7 @@ console.log(datos);
   return (
     <div  id="page" className={styles.body}>
     <div className={styles.titleContainer}>
-        <button className={styles.btn}><img className="btn--indexBack" src="'../assets/Back.png'" alt="back index button"/></button>
+        <Link className={styles.button} to='/'><img className={styles.imageBack} src={buttonBack}/></Link>
         <h1 className={styles.title}>FORMULARIO</h1>
     </div>
     <form className={styles.form} action="" id="form">

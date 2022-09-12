@@ -134,6 +134,10 @@ ul {
 }
 
 @media (max-width: 690px){
+    body{
+        height: 100%;
+        width: 100%;
+    }
     .header {
         display: flex;
         flex-direction: column;

@@ -36,11 +36,11 @@ function Landing() {
         </main>
 
         <footer className={styles.footer}>
-                <a className={styles.linkedIn} href="https://www.linkedin.com/in/tomas-napolitano"><img className={styles.logoLinkedIn} src={linkedInLogo} alt="LinkedIn member"/>Tomas Napolitano</a>
-                <a className={styles.linkedIn} href="https://www.linkedin.com/in/maximiliano-santin-34ba6876"><img className={styles.logoLinkedIn} src={linkedInLogo} alt="LinkedIn member"/>Maximiliano Santin</a>
-                <a className={styles.linkedIn} href="https://www.linkedin.com/in/mathias-avolio-0a27811b5"><img className={styles.logoLinkedIn} src={linkedInLogo} alt="LinkedIn member"/>Mathias Avolio</a>
-                <a className={styles.linkedIn} href="https://www.linkedin.com/in/foclemens"><img className={styles.logoLinkedIn} src={linkedInLogo} alt="LinkedIn member"/>Fernando Clemens</a>
-                <a className={styles.gitHub} href="https://github.com/Ferclemens/React-SkillFactoryBootcamp/tree/TP1-form%2Cfetch"><img className={styles.logoGitHub} src={githubLogo} alt="github project"/>GitHub</a>  
+                <a className={styles.linkedIn} href="https://www.linkedin.com/in/tomas-napolitano"><img className={styles.logoLinkedIn} src={linkedInLogo} alt="LinkedIn member" target="_blank"/>Tomas Napolitano</a>
+                <a className={styles.linkedIn} href="https://www.linkedin.com/in/maximiliano-santin-34ba6876"><img className={styles.logoLinkedIn} src={linkedInLogo} alt="LinkedIn member" target="_blank"/>Maximiliano Santin</a>
+                <a className={styles.linkedIn} href="https://www.linkedin.com/in/mathias-avolio-0a27811b5"><img className={styles.logoLinkedIn} src={linkedInLogo} alt="LinkedIn member" target="_blank"/>Mathias Avolio</a>
+                <a className={styles.linkedIn} href="https://www.linkedin.com/in/foclemens"><img className={styles.logoLinkedIn} src={linkedInLogo}  alt="LinkedIn member" target="_blank"/>Fernando Clemens</a>
+                <a className={styles.gitHub} href="https://github.com/Ferclemens/React-SkillFactory-ViteApp.git"><img className={styles.logoGitHub} src={githubLogo} alt="github project" target="_blank"/>GitHub</a>  
         </footer>
         </body>
 </div>
