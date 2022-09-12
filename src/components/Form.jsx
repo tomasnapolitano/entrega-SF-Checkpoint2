@@ -41,7 +41,7 @@ console.log(datos);
           <label className="label" >Nombre</label>
           <input className={styles.input} onChange= {agregarNombre} type="text" name="name" autoComplete="off"></input>
           <label className="label"  >Email</label>
-          <input className={styles.input} onChange= {agregarEmail}type="email" name="email" autoComplete="off"></input>
+          <input className={styles.input} onChange= {agregarEmail} type="email" name="email" autoComplete="off"></input>
           <label className="label" >Mensaje</label>
           <textarea className={styles.textArea} onChange= {agregarMensaje}name="mensaje" cols="30" rows="10"></textarea>
           <button className={styles.button} onClick={mostrarDatos}>Enviar</button>
