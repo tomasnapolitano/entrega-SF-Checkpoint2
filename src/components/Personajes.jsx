@@ -3,7 +3,6 @@ import Buscador from './Buscador'
 import Card from './Card'
 import GetApi from './GetApi'
 import HeaderRyM from './HeaderRyM'
-
 import Paginado from './Paginado'
 import styles from './Personajes.module.css'
 

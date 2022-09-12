@@ -37,13 +37,12 @@
 
 @media (max-width: 635px) {
     .cardDetail {
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 300px;
-        margin: 3%;
+        margin: 3% 0;
         padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        left: 30%;
         gap: 10px; 
     }
 }
