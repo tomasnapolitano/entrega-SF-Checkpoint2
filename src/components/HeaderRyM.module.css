@@ -15,6 +15,10 @@
     align-items: center;
     text-decoration: none;
     left: 5%;
+    transition: 0.5s;
+}
+.button:hover {
+    transform: scale(1.4);
 }
 .imageBack {
     width: 50px;

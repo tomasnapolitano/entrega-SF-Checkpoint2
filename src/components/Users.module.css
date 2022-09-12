@@ -11,7 +11,7 @@
   background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 .container {
-  margin: 100px 0 0 50px;
+  margin: 50px 5px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -58,7 +58,11 @@
   position: absolute;
   text-decoration: none;
   left: 5%;
-  top: 5%;
+  top: 7%;
+  transition: 0.5s;
+}
+.button:hover {
+    transform: scale(1.4);
 }
 .imageBack {
   width: 50px;
@@ -72,4 +76,5 @@
 .title {
   margin-top: 45px;
   text-align: center;
+  font-size: xxx-large;
 }
