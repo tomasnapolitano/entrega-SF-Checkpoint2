@@ -109,7 +109,7 @@ via the the following commands:
 
 - git init
 - git clone https://github.com/Ferclemens/React-SkillFactory-ViteApp.git
-(This repo is forked from the one linked above)
+(The repo you are in is forked from the one linked here)
 
 Move to the project folder:
 
