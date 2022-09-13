@@ -2,48 +2,40 @@ import React, { useState } from 'react'
 import styles from './Form.module.css'
 import { Link } from 'react-router-dom'
 import buttonBack from '../assets/Back.png'
-
+import {handleInput} from '../utils/handleInput.js'
+import { emailRegex } from '../utils/regex.js'
 
 function Form() {
-  const [name, setName] = useState("") 
-  function agregarNombre(text){
-    setName(text.target.value)
-  }
-  const [email, setEmail] = useState("") 
-    function agregarEmail(text){
-      setEmail(text.target.value)
-  }
-  const [mensaje, setMensaje] = useState("") 
-  function agregarMensaje(text){
-    setMensaje(text.target.value)
-  }
+  
+const [data, setData] = useState({name:'', email: '', text:'' })
 
 function mostrarDatos(e) {
-  e.preventDefault()
-  const datos = {
-    "name": name,
-    "email": email,
-    "mensaje":mensaje
+ e.preventDefault()
+  if(!data.name || !data.email || !data.text){
+    console.log("Te faltan datos")
+    return
   }
-console.log(datos);
+  if(!emailRegex.test(data.email)){
+    console.log("pone un email valido")
+    return
+  }
+  console.log(data);
 }
 
- console.log(name);
-  console.log(email);
-  console.log(mensaje);
+
   return (
     <div  id="page" className={styles.body}>
       <div className={styles.titleContainer}>
           <Link className={styles.buttonExit} to='/'><img className={styles.imageBack} src={buttonBack}/></Link>
           <h1 className={styles.title}>FORMULARIO</h1>
       </div>
-      <form className={styles.form} action="" id="form">
+      <form className={styles.form} action='' method='' id="form">
           <label className="label" >Nombre</label>
-          <input className={styles.input} onChange= {agregarNombre} type="text" name="name" autoComplete="off"></input>
+          <input className={styles.input} onChange= {(value)=> handleInput('name', value, setData, data) } type="text" name="name" autoComplete="off"></input>
           <label className="label"  >Email</label>
-          <input className={styles.input} onChange= {agregarEmail} type="email" name="email" autoComplete="off"></input>
+          <input className={styles.input} onChange= {(value)=> handleInput('email', value, setData, data) } type="email" name="email" autoComplete="off"></input>
           <label className="label" >Mensaje</label>
-          <textarea className={styles.textArea} onChange= {agregarMensaje}name="mensaje" cols="30" rows="10"></textarea>
+          <textarea className={styles.textArea} onChange= {(value)=> handleInput('text', value, setData, data) } name="mensaje" cols="30" rows="10"></textarea>
           <button className={styles.button} onClick={mostrarDatos}>Enviar</button>
       </form>
     </div>
